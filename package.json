@@ -1,0 +1,29 @@
+{
+  "name": "learn-dialogflow-fulfillment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "NODE_ENV=test tape src/tests.js | tap-spec",
+    "start:solution": "node solution/index.js",
+    "dev:solution": "nodemon solution/index.js",
+    "test:solution": "NODE_ENV=test tape solution/tests.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "@oliverjam",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
+  }
+}
